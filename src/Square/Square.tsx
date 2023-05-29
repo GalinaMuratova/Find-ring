@@ -3,9 +3,8 @@ import React from 'react';
 interface SquareProps {
     hasItem: boolean;
     clicked:boolean;
+    onClick:React.MouseEventHandler;
 }
-
-
 const Square: React.FC<SquareProps> = props => {
     const squareClass = `square ${props.clicked ? 'clicked' : ''}`;
 
@@ -15,7 +14,7 @@ const Square: React.FC<SquareProps> = props => {
         }
             };
     return (
-        <div className={squareClass} >
+        <div className={squareClass} onClick={props.onClick} >
             {getItem()}
         </div>
     );

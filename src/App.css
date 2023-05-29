@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 350px;
+  margin: 10px auto;
 }
 
 .square {
@@ -18,10 +19,14 @@
   font-size: 24px;
   cursor: pointer;
   margin: 2px;
+  border: 1px solid lightgray;
 }
 
 .clicked {
   background-color: white;
 }
 
+.reset-btn {
+  padding: 10px 15px;
+}
 
